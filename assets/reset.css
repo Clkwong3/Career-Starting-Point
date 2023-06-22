@@ -1,0 +1,48 @@
+/* Create a CSSs file that resets HTML elements' styling to the same starting point. */
+/* Define the space around and inside any defined border. */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Specify the height of an element. */
+html {
+  height: 100%;
+}
+
+/* Basic layout for anything typed into the body */
+body {
+  min-height: 100%;
+  line-height: 1;
+  font-family: sans-serif;
+}
+
+/* Set the font size of all headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+/* Set the following elements' font family to be the same as the <body>. */
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/* Make sure no list style is used. */
+ol,
+ul {
+  list-style: none;
+}
