@@ -1,15 +1,48 @@
 @import url("https://fonts.googleapis.com/css?family=Quicksand:500");
 
-body {
-  margin: 0;
+/* Set the overall parameters of the portfolio */
+* {
+  box-sizing: border-box;
   padding: 0;
-  background: #9babb8;
+  margin: 0;
+}
+
+body {
+  background: #818bb7;
   font-family: "Quicksand", sans-serif;
 }
 
-.top-nav {
+/* Stylize the navigation bar */
+/* Banner appearance */
+.top-nav ul {
+  padding: 20px;
+  background: #9bb5d6;
   list-style: none;
-  background: #f0ffff;
-  margin: 0;
-  padding: 0;
+  text-align: right;
+  /* border: gold solid; */
 }
+
+/* Area around the links */
+.top-nav li {
+  display: inline-block;
+  padding: 20px;
+  align-items: center;
+  /* border: orange solid; */
+}
+
+/* Links appearance */
+.top-nav a {
+  display: block;
+  color: #0e2954;
+  font-weight: 100px;
+  font-size: 20px;
+  text-underline-offset: 8px;
+  text-transform: uppercase;
+  /* border: pink solid; */
+}
+
+/* Border-box will change color when cursor is above links */
+.top-nav li:hover {
+  background: #f0ffff;
+}
+/* End of navigation bar */
