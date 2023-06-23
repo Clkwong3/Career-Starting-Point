@@ -12,28 +12,37 @@ body {
   background: slategray;
 }
 
-/* Banner of top-nav */
-header {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: azure;
-}
-
-/* List style of top <nav> */
-section ul {
-  list-style-type: none;
-}
-
-/* Appearance of top <nav> */
-ul li,
+/* Stylize the tags */
+li,
 a {
-  padding-top: 15px;
-  margin-left: 25px;
-  display: inline-block;
   font-family: "Quicksand", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: black;
   text-decoration: none;
 }
+
+/* Banner of nav-links */
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: azure;
+  border: solid;
+}
+
+/* Style the nav-links */
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+  /* border: dotted; */
+}
+
+.nav-links li a {
+  transition: smooth;
+}
+/* End of nav-links */
