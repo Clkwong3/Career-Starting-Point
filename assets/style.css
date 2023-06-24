@@ -47,7 +47,7 @@ body {
   list-style: none;
   padding: 3px;
   margin: 15px 15px;
-  border: orange solid;
+  border: orange dotted;
 }
 
 /* Links appearance */
@@ -60,7 +60,7 @@ body {
   border: pink solid;
 }
 
-/* Border-box will change color when cursor is above links */
+/* Hover effect on links */
 .top-nav ul li a::after {
   content: "";
   width: 0;
