@@ -3,25 +3,36 @@
 
 /* Set the overall parameters of the portfolio */
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "League+Spartan", "Montserrat", sans-serif;
+  box-sizing: border-box;
 }
 
+/* Default background color and text color */
 body {
   background: #818bb7;
+  color: #8bb781;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url();
+  background-size: cover;
+  background-position: center;
 }
 
 .top-nav {
-  padding: 20px;
-  background: #9bb5d6;
+  display: flex;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #9bb5d6;
 }
 
-.top-nav h1 {
-  display: inline-block;
-  font-family: "Montserrat", sans-serif;
-  font-size: 40px;
+.logo {
+  width: 140px;
 }
 
 /* Stylize the navigation bar */
