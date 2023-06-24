@@ -9,18 +9,25 @@
   </head>
 
   <body>
-    <!-- Use <nav> to mark the block as part of the site navigation. -->
-    <nav class="top-nav">
+    <!-- Use <id> for only one 'header' -->
+    <div id="header">
+      <!-- Use <nav> to mark the block as part of the site navigation. -->
+      <nav class="top-nav">
+        <!-- Links to help with navigating the portfolio. -->
+        <section>
+          <ul>
+            <li><a href="#about-me">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contacts">Contact</a></li>
+          </ul>
+        </section>
+      </nav>
+    </div>
+
+    <div class="header-text">
       <h1>Clarice Kwong</h1>
-      <!-- Links to help with navigating the portfolio. -->
-      <section>
-        <ul>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+      <p>Full Stack Web Developer</p>
+    </div>
 
     <main class="content">
       <!-- Use <article> for each block of information -->
