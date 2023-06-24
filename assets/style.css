@@ -26,25 +26,19 @@ body {
   background-position: center;
 }
 
-/* Flex-wrap the nav links */
+/* Image and links appearance */
 .top-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   background: #9bb5d6;
+  border: gold solid;
 }
 
 /* Size of logo */
 .logo {
   width: 140px;
-}
-
-/* Banner appearance */
-.top-nav section {
-  padding-top: 15px;
-  margin-right: 20px;
-  /* border: gold solid; */
 }
 
 /* Area around the links */
@@ -53,21 +47,33 @@ body {
   list-style: none;
   padding: 3px;
   margin: 15px 15px;
-  /* border: orange solid; */
+  border: orange solid;
 }
 
 /* Links appearance */
 .top-nav a {
-  display: block;
   color: #0e2954;
   font-size: 20px;
-  text-underline-offset: 8px;
+  text-decoration: none;
   text-transform: uppercase;
-  /* border: pink solid; */
+  position: relative;
+  border: pink solid;
 }
 
 /* Border-box will change color when cursor is above links */
-.top-nav li:hover {
-  background: #dbfefe;
+.top-nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #030303;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.3s;
 }
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
 /* End of navigation bar */
