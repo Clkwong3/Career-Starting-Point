@@ -33,12 +33,25 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   background: #9bb5d6;
-  border: gold solid;
+  /* border: gold solid; */
 }
 
 /* Size of logo */
 .logo {
   width: 140px;
+}
+
+/* Title appearance */
+.header-text {
+  align-items: left;
+}
+
+.header-text h1 {
+  font-size: 25px;
+}
+
+.header-text p {
+  font-size: 20px;
 }
 
 /* Area around the links */
@@ -47,7 +60,7 @@ body {
   list-style: none;
   padding: 3px;
   margin: 15px 15px;
-  border: orange dotted;
+  /* border: orange dotted; */
 }
 
 /* Links appearance */
@@ -57,7 +70,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   position: relative;
-  border: pink solid;
+  /* border: pink solid; */
 }
 
 /* Hover effect on links */
