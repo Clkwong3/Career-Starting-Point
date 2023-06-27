@@ -20,7 +20,7 @@
 
         <!-- Header/Title -->
         <div class="header-text">
-          <h1>Clarice Kwong</h1>
+          <h1>Hi, I'm Clarice. Nice to meet you.</h1>
           <p>Full-Stack Web Developer</p>
         </div>
       </section>
@@ -37,22 +37,17 @@
   </div>
 
   <main class="content">
-  <!-- Use <aside> for h2 -->
-    <aside>
-        <h2>About Me</h2>
-        <h2>Projects</h2>
-        <h2>Contact Me</h2>
-    </aside>
-
-    <!-- Use <section> for each block of information -->
-    <section id="about-me" class="about-me">
+    <!-- Use <article> for each block of information -->
+    <article ="about-me" class="about-me"> 
+      <h2>About Me</h2>
       <p>
         - professional background - key accomplishments - personal values and
         biggest accomplishments - What are you looking for now?
       </p>
-    </section>
+    </article>
 
-    <section id="projects" class="projects">
+    <article id="projects" class="projects">
+      <h2>Projects</h2>
       <p>
         - multiple img with links to projects I've done -class=float:right for
         h2?
@@ -64,10 +59,12 @@
         <div class="flex-item" id="port4"></div>
         <div class="flex-item" id="port5"></div>
       </div>
-    </section>
+    </article>
 
-    <section id="contacts" class="contacts">
-        <ul>
+    <article id="contacts" class="contacts">
+      <h2>Contact Me</h2>
+
+      <ul>
           <li>
             <a href="https://github.com/Clkwong3"><img src="./assets/images/github.png" /></a>
           </li>
@@ -75,7 +72,7 @@
             <a href="mailto:clkwong17@gmail.com"><img src="./assets/images/email.png" /></a>
           </li>
         </ul>
-    </section>
+    </article>
   </main>
 
   <nav class="footer">
