@@ -11,16 +11,15 @@
 
 /* Default background color and text color */
 body {
-  background: #818bb7;
-  color: #3416bf;
+  background-color: #3416bf;
+  color: #a1bf16;
 }
 
 /* Stylize the navigation bar */
-
 /* Background image */
 #header {
   width: 100%;
-  height: 50vh;
+  height: 20vh;
   background-image: url("./images/circuits.webp");
   background-size: cover;
   background-position: center;
@@ -29,26 +28,28 @@ body {
 /* Image and links appearance */
 .top-nav {
   display: flex;
-  /* align-items: center; */
-  /* justify-content: space-between; */
+  align-items: center;
   flex-wrap: wrap;
   /* border: gold solid; */
 }
 
 .logo {
-  background: #9bb5d6;
+  margin-top: auto;
   display: flex;
   align-items: center;
+  background: #9bb5d6;
 }
+
 /* Size of logo */
 .rooster {
   width: 100px;
 }
 
-/* Title appearance */
+/* Header/Title location and appearance */
 .header-text {
   padding: 5px;
   align-items: left;
+  color: #3416bf;
 }
 
 .header-text h1 {
@@ -66,18 +67,17 @@ body {
 
 /* Area around the links */
 .top-nav ul li {
-  display: inline-block;
-  list-style: none;
   padding: 3px;
   margin: 15px 15px;
+  display: inline-block;
+  list-style: none;
   /* border: orange dotted; */
 }
 
 /* Links appearance */
 .top-nav a {
-  color: #0e2954;
+  color: #a1bf16;
   font-size: 20px;
-
   text-align: left;
   text-decoration: none;
   text-transform: uppercase;
@@ -90,7 +90,7 @@ body {
   content: "";
   width: 0;
   height: 3px;
-  background-color: #030303;
+  background-color: #a1bf16;
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -102,6 +102,19 @@ nav ul li a:hover::after {
 }
 /* End of navigation bar */
 
+/* Parameters of h2 */
+aside {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 150px;
+  width: 15%;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+  border-right: #00ffff solid;
+  /* border: gold solid; */
+}
+
 .about-me {
   display: flex;
 }
@@ -110,6 +123,7 @@ nav ul li a:hover::after {
   display: flex;
   flex-wrap: wrap;
 }
+
 .portfolio {
   display: flex;
   flex-wrap: wrap;
@@ -128,21 +142,25 @@ nav ul li a:hover::after {
 #port1 {
   flex-basis: 100%;
 }
-/* Parameters of h2 */
-.about-me h2,
-.projects h2,
-.contacts h2 {
-  margin-bottom: 20px;
-  padding: 50px;
-  height: 150px;
-  width: auto;
-  font-family: "Courier New", Courier, monospace;
+
+/* Stylize the contacts */
+/* Size of contacts img*/
+img {
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-left: 50px;
+  width: 10%;
+  align-items: center;
 }
 
 /* Organize the Contacts Section*/
-.contact ul li a {
+.contacts ul li a {
   display: inline-block;
-  max-height: 200px;
+  list-style: none;
+  padding: 3px;
+  margin: 15px 15px;
+  color: #a1bf16;
+  position: relative;
 }
 
 /* Footer */

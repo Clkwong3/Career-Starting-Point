@@ -28,7 +28,6 @@
       <!-- Links to help with navigating the portfolio. -->
       <section class="nav-links">
         <ul>
-          <li><a href="#Home">Home</a></li>
           <li><a href="#about-me">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#contacts">Contact</a></li>
@@ -38,40 +37,43 @@
   </div>
 
   <main class="content">
+  <!-- Use <aside> for h2 -->
+    <aside>
+        <h2>About Me</h2>
+        <h2>Projects</h2>
+        <h2>Contact Me</h2>
+    </aside>
     <!-- Use <article> for each block of information -->
-    <article class="about-me">
-      <h2>About Me</h2>
+    <article id="about-me" class="about-me">
       <p>
         - professional background - key accomplishments - personal values and
         biggest accomplishments - What are you looking for now?
       </p>
     </article>
 
-    <article class="projects">
-      <h2>Projects</h2>
+    <article id="projects" class="projects">
       <p>
         - multiple img with links to projects I've done -class=float:right for
         h2?
       </p>
       <div class="portfolio">
         <div class="flex-item" id="port1"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
-        <div class="flex-item"></div>
+        <div class="flex-item" id="port2"></div>
+        <div class="flex-item" id="port3"></div>
+        <div class="flex-item" id="port4"></div>
+        <div class="flex-item" id="port5"></div>
       </div>
     </article>
 
-    <article class="contacts">
-      <h2>Contacts</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/Clkwong3"><img src="./assets/images/github.png" />https://github.com/Clkwong3</a>
-        </li>
-        <li>
-          <a href="mailto:clkwong17@gmail.com"><img src="./assets/images/email.png" />clkwong17@gmail.com</a>
-        </li>
-      </ul>
+    <article id="contacts" class="contacts">
+        <ul>
+          <li>
+            <a href="https://github.com/Clkwong3"><img src="./assets/images/github.png" /></a>
+          </li>
+          <li>
+            <a href="mailto:clkwong17@gmail.com"><img src="./assets/images/email.png" /></a>
+          </li>
+        </ul>
     </article>
   </main>
 
