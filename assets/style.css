@@ -144,24 +144,25 @@ aside {
 }
 
 /* Stylize the contacts */
-/* Size of contacts img*/
-img {
-  margin-top: 10px;
-  margin-left: 10px;
-  padding-left: 50px;
-  width: 10%;
-  align-items: center;
+/* Images are side by side */
+.img-row {
+  display: flex;
 }
 
-/* Organize the Contacts Section*/
-.contacts ul li a {
-  display: inline-block;
-  list-style: none;
-  padding: 3px;
-  margin: 15px 15px;
-  color: #a1bf16;
-  position: relative;
+/* Spacing between images */
+.column {
+  flex: content;
+  margin: 20px;
+  padding: 20px;
 }
+
+/* Responsive Stacking */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 50%;
+  }
+}
+/* End of contacts */
 
 /* Footer */
 /* Appearance of footer */
