@@ -1,11 +1,10 @@
 # Career Starting Point: Presentation
 
-Putting what you learn into practice is the best way to remember anything. Building a portfolio or a website from the bottom up provides you with a base to experiment with. Create the framework first using media queries, flex-box, and CSS variables.
+By creating the portfolio or website yourself, it becomes a part of what you present to the interviewer. Additionally, it can be used to try out new ideas.
 
 ## What to use
 
-HTML
-CSS
+HTML CSS
 
 ## Features
 
