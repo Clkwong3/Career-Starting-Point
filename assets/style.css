@@ -119,6 +119,7 @@ aside {
   display: flex;
 }
 
+/* Stylize Projects */
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -129,6 +130,8 @@ aside {
   flex-wrap: wrap;
   justify-content: space-around;
   width: 75%;
+  padding: 5%;
+  margin-left: 10%;
 }
 
 .flex-item {
@@ -143,17 +146,24 @@ aside {
   flex-basis: 100%;
 }
 
+#port2,
+#port3,
+#port4,
+#port5 {
+  flex-basis: 50%;
+}
+/* End of Projects */
+
 /* Stylize the contacts */
 /* Images are side by side */
 .img-row {
-  display: flex;
+  display: inline-flex;
 }
 
 /* Spacing between images */
 .column {
   flex: content;
-  margin: 20px;
-  padding: 20px;
+  padding: 30px;
 }
 
 /* Responsive Stacking */
