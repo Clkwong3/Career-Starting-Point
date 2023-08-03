@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   min-height: 100%;
   line-height: 1;
@@ -41,6 +37,7 @@ body {
   margin-bottom: 20px;
 }
 
+/* Navigation */
 .nav-btn {
   display: inline-block;
 }
@@ -55,34 +52,13 @@ body {
   margin-right: 10px;
 }
 
+.cta-button:hover {
+  border: 2px solid #ffe252;
+  font-size: large;
+}
+
 .cta-button:last-child {
   margin-right: 0;
-}
-
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-} */
-
-input,
-select,
-option,
-optgroup,
-textarea,
-button,
-pre,
-code {
-  font-size: 100%;
-  font-family: inherit;
-}
-
-ol,
-ul {
-  list-style: none;
 }
 
 /* Content */
