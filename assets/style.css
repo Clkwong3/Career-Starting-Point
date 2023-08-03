@@ -10,15 +10,19 @@
 
 body {
   background-color: #3416bf;
-  color: #a1bf16;
 }
 
-/* Hero */
+.content,
+.footer {
+  background-color: #eed7a1;
+}
+
+/*---- Hero ----*/
 #hero {
   background-image: url("./images/circuits.webp");
   background-size: cover;
   background-position: center;
-  height: 400px;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,20 +31,20 @@ body {
   color: #fff;
   text-align: center;
   line-height: 1.5;
-  border: 2px solid #ff5733;
 }
 
 #hero h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  line-height: 200%;
 }
 
 #hero p {
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 90px;
 }
 
-/* Navigation */
+/*---- Navigation ----*/
 .nav-btn {
   display: inline-block;
 }
@@ -64,7 +68,7 @@ body {
   margin-right: 0;
 }
 
-/* Project */
+/*---- Project ----*/
 .project-item {
   display: flex;
   align-items: center;
@@ -99,7 +103,7 @@ body {
   font-size: 20px;
 }
 
-/* Contacts */
+/*---- Contacts ----*/
 .img-row {
   display: flex;
   justify-content: center;
@@ -117,7 +121,7 @@ body {
   height: auto;
 }
 
-/* Footer */
+/*---- Footer ----*/
 .footer {
   padding: 30px;
   clear: both;
