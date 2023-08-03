@@ -12,6 +12,23 @@ body {
   background-color: #3416bf;
 }
 
+/* ---- Overlay ----*/
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Adjust the last value (0.7) to control the darkness */
+  z-index: 9998; /* Set the z-index to a value just below the enlarged image */
+  display: none;
+}
+
 .content,
 .footer {
   background-color: #eed7a1;

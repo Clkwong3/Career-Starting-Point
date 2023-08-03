@@ -1,9 +1,22 @@
-// Project Image gets bigger
-const toggleImages = document.querySelectorAll(".toggleImage");
+const overlay = document.querySelector(".overlay");
+const toggleImg = document.querySelectorAll(".toggleImage");
+let currentEnlargedImg = null;
 
-toggleImages.forEach((image) => {
-  image.addEventListener("click", function () {
-    let isEnlarged = this.classList.toggle("enlarged-image");
+toggleImg.forEach((Img) => {
+  Img.addEventListener("click", function () {
+    if (currentEnlargedImg && currentEnlargedImg !== this) {
+      // Revert the previously enlarged image to its original state
+      currentEnlargedImg.classList.remove("enlarged-Img");
+      currentEnlargedImg.style.position = "static";
+      currentEnlargedImg.style.top = "auto";
+      currentEnlargedImg.style.left = "auto";
+      currentEnlargedImg.style.transform = "none";
+      currentEnlargedImg.style.zIndex = "auto";
+      currentEnlargedImg.style.maxWidth = "25%";
+    }
+
+    // Toggle the clicked image's enlargement
+    let isEnlarged = this.classList.toggle("enlarged-Img");
 
     if (isEnlarged) {
       this.style.position = "fixed";
@@ -11,14 +24,19 @@ toggleImages.forEach((image) => {
       this.style.left = "50%";
       this.style.transform = "translate(-50%, -50%)";
       this.style.zIndex = "9999";
-      this.style.maxWidth = "60%"; /* Set the maximum width to 100% */
+      this.style.maxWidth = "60%";
+      overlay.style.display = "block";
     } else {
       this.style.position = "static";
       this.style.top = "auto";
       this.style.left = "auto";
       this.style.transform = "none";
       this.style.zIndex = "auto";
-      this.style.maxWidth = "25%"; /* Reset the width to the initial value */
+      this.style.maxWidth = "25%";
+      overlay.style.display = "none";
     }
+
+    // Update the currently enlarged image
+    currentEnlargedImg = isEnlarged ? this : null;
   });
 });
