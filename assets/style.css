@@ -71,16 +71,22 @@ body {
 /*---- Project ----*/
 .project-item {
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
-.project-image {
+.toggleImage {
   max-width: 25%;
   height: auto;
-  padding-bottom: 20px;
   margin-right: 20px;
-  margin-left: 200px;
+  margin-left: 20px;
+  border: 1px solid #a1b8ee;
+}
+
+.toggleImage:hover {
+  border: 7px solid #a1b8ee;
 }
 
 .project-description {
