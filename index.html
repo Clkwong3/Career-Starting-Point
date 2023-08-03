@@ -10,31 +10,17 @@
 </head>
 
 <body>
-  <!-- Use <id> for only one 'header' because background image won't appear otherwise-->
-  <div id="header">
-    <!-- Use <nav> to mark the block as part of the site navigation. -->
-    <nav class="top-nav">
-      <section class="logo">
-        <!-- Logo -->
-        <img src="./assets/images/logo.webp" class="rooster" alt="red rooster" />
-
-        <!-- Header/Title -->
-        <div class="header-text">
-          <h1>Hi, I'm Clarice.</h1>
-          <p>Nice to meet you. <br> Full-Stack Web Developer</p>
-        </div>
-      </section>
-
-      <!-- Links to help with navigating the portfolio. -->
-      <section class="nav-links">
-        <ul>
-          <li><a href="#about-me">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contacts">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+    <div id="hero">
+    <h1>Welcome to My Website. </br> I'm Clarice Kwong. </h1>
+    <p>It's nice to meet you.</p>
+    <!-- Navigation -->
+    <div class="nav-btns">
+      <a href="#about-me" class="cta-button">Learn More</a>
+      <a href="#projects" class="cta-button">Projects</a>
+      <a href="#contacts" class="cta-button">Contact Me</a>
+    </div>
   </div>
+
 
   <main class="content">
     <!-- Use <article> for each block of information -->
@@ -48,10 +34,9 @@
 <br>
     <article id="projects" class="projects">
       <h2>Projects</h2>
-      <p>
-        - multiple img with links to projects I've done
-      </p>
       <div class="portfolio">
+        
+        <!-- Hype-Radar -->
         <div class="project-item">
           <img class="project-image hypeRadar" src="./assets/images/hypeRadar.png" alt="hypeRadar project" />
           <div class="project-description">
@@ -65,9 +50,9 @@
               </br>
               Click here to go to the <a href="https://github.com/fabioesilveira/hype-radar">repository</a>.
             </p>
-          </div>
-          
+          </div>          
         </div>
+
         <div class="flex-item" id="port2"></div>
         <div class="flex-item" id="port3"></div>
         <div class="flex-item" id="port4"></div>
@@ -91,7 +76,7 @@
   </main>
 
   <nav class="footer">
-    <h3>Made by Clarice Kwong</h2>
+    <h6>Made by Clarice Kwong</h2>
   </nav>
 </body>
 </html>

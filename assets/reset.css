@@ -14,14 +14,59 @@ body {
   font-family: sans-serif;
 }
 
-h1,
+/* Hero */
+#hero {
+  background-image: url("./images/circuits.webp");
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  border: 2px solid #ff5733;
+}
+
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.nav-btn {
+  display: inline-block;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cta-button:last-child {
+  margin-right: 0;
+}
+
+/* h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
   font-size: 100%;
-}
+} */
 
 input,
 select,
