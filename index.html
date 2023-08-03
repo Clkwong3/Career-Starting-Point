@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/reset.css" />
   <link rel="stylesheet" href="./assets/style.css" />
   <title>Clarice Kwong</title>
 </head>
@@ -37,17 +36,17 @@
         
         <!-- Hype-Radar -->
         <div class="project-item">
-          <img class="project-image hypeRadar" src="./assets/images/hypeRadar.png" alt="hypeRadar project" />
+          <img id="hypeRadarImage" class="project-image hypeRadar" src="./assets/images/hypeRadar.png" alt="hypeRadar project" />
           <div class="project-description">
             <h3>Hype Radar Project</h3>
-            <p>
-              The Hype Radar Project is a web application that uses YouTube API to analyze and display data for any YouTube channels.
+            <p class="project-text">
+              The Hype-Radar Project is a web application that uses YouTube API to analyze and display data for any YouTube channels.
               Users can search for channels by username and see all the statistics in a bar chart.
-              Additionally, the app showcases 5 of latest popular content in Youtube. 
-              A couple of features to mention: Search History to find previously searched channels and helpful error messages to
-              ensure a smooth user experience.
-              </br>
-              Click here to go to the <a href="https://github.com/fabioesilveira/hype-radar">repository</a>.
+            </p>
+            <p>
+              <a href="https://github.com/fabioesilveira/hype-radar">Click here to go to the repository</a> 
+              <br>
+              <a href="https://fabioesilveira.github.io/hype-radar/">Click here to give it a try!</a>
             </p>
           </div>          
         </div>
@@ -74,8 +73,10 @@
 
   </main>
 
-  <nav class="footer">
+  <footer class="footer">
     <h6>Made by Clarice Kwong</h2>
-  </nav>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

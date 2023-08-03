@@ -15,167 +15,90 @@ body {
   color: #a1bf16;
 }
 
-/* Stylize the navigation bar */
-/* Background image */
-#header {
-  width: 100%;
-  height: 20vh;
+/* Hero */
+#hero {
   background-image: url("./images/circuits.webp");
   background-size: cover;
   background-position: center;
-}
-
-/* Image and links appearance */
-.top-nav {
+  height: 400px; /* Adjust the height as needed */
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  /* border: gold solid; */
+  gap: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+  border: 2px solid #ff5733;
 }
 
-.logo {
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  background: #9bb5d6;
+#hero h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
 }
 
-/* Size of logo */
-.rooster {
-  width: 100px;
-}
-
-/* Header/Title location and appearance */
-.header-text {
-  padding: 5px;
-  align-items: left;
-  color: #3416bf;
-}
-
-.header-text h1 {
-  font-size: 30px;
-}
-
-.header-text p {
+#hero p {
   font-size: 20px;
-}
-
-.nav-links {
-  margin-left: auto;
-  margin-top: 5%;
-}
-
-/* Area around the links */
-.top-nav ul li {
-  padding: 3px;
-  margin: 15px 15px;
-  display: inline-block;
-  list-style: none;
-  /* border: orange dotted; */
-}
-
-/* Links appearance */
-.top-nav a {
-  color: #a1bf16;
-  font-size: 20px;
-  text-align: left;
-  text-decoration: none;
-  text-transform: uppercase;
-  position: relative;
-  /* border: pink solid; */
-}
-
-/* Hover effect on links */
-.top-nav ul li a::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  background-color: #a1bf16;
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: 0.3s;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}
-/* End of navigation bar */
-
-/* Parameters of h2 */
-aside {
   margin-bottom: 20px;
-  padding: 50px;
-  height: 150px;
-  width: 15%;
+}
+
+/* Navigation */
+.nav-btn {
+  display: inline-block;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.cta-button:hover {
+  border: 2px solid #ffe252;
+  font-size: large;
+}
+
+.cta-button:last-child {
+  margin-right: 0;
+}
+
+/* Content */
+.project-item {
+  display: flex;
   align-items: center;
-  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+}
+
+.project-image {
+  max-width: 25%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.project-description {
+  flex: 1;
+  background-color: #87cefa;
+  color: #212b33;
+  padding: 10px;
+}
+
+.project-description h3 {
+  margin-top: 0;
+  padding-bottom: 15px;
   font-size: 25px;
-  border-right: #00ffff solid;
-  /* border: gold solid; */
 }
 
-.about-me {
-  display: flex;
+.project-text {
+  margin-bottom: 15px;
+  line-height: 1.3;
+  font-size: 20px;
 }
-
-/* Stylize Projects */
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.portfolio {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 75%;
-  padding: 5%;
-  margin-left: 10%;
-}
-
-.flex-item {
-  display: flex;
-  height: 150px;
-  flex-basis: 45%;
-
-  border: 5px solid red;
-}
-
-#port1 {
-  flex-basis: 100%;
-}
-
-#port2,
-#port3,
-#port4,
-#port5 {
-  flex-basis: 50%;
-}
-/* End of Projects */
-
-/* Stylize the contacts */
-/* Images are side by side */
-.img-row {
-  display: inline-flex;
-}
-
-/* Spacing between images */
-.column {
-  flex: content;
-  padding: 30px;
-}
-
-/* Responsive Stacking */
-@media screen and (max-width: 500px) {
-  .column {
-    width: 50%;
-  }
-}
-/* End of contacts */
 
 /* Footer */
-/* Appearance of footer */
 .footer {
   padding: 30px;
   clear: both;
@@ -183,8 +106,3 @@ aside {
     "Lucida Sans", Arial, sans-serif;
   text-align: center;
 }
-
-.footer h3 {
-  font-size: 20px;
-}
-/* End of footer */
